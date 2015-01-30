@@ -1,0 +1,22 @@
+# Blender MTL File: 'None'
+# Material Count: 2
+
+newmtl ENV_MP_Iraq_Palm_Tree_01.001
+Ns 1.960784
+Ka 0.000000 0.000000 0.000000
+Kd 0.301056 0.301056 0.301056
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ENV_MP_Iraq_palm_tree_01_D.tga
+
+newmtl ENV_MP_Iraq_PlantsSansTrans.001
+Ns 1.960784
+Ka 0.000000 0.000000 0.000000
+Kd 0.301056 0.301056 0.301056
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd ENV_MP_Iraq_PlantsSansTrans_D.tga

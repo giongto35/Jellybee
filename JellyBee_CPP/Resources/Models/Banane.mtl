@@ -1,0 +1,32 @@
+# Blender MTL File: 'Chuoi.blend'
+# Material Count: 3
+
+newmtl Brand
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.373961 0.373961 0.373961
+Ks 0.449020 0.449020 0.449020
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd BTbranch_Defuse.tga
+
+newmtl Leave
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.373961 0.373961 0.373961
+Ks 0.449020 0.449020 0.449020
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd BTleave_Defuse.tga
+
+newmtl Tree
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.373961 0.373961 0.373961
+Ks 0.449020 0.449020 0.449020
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd BTree_Defuse.tga

@@ -1,0 +1,9 @@
+#Object:
+	ID			MODEL		TEXTURE		SHADER		POSITION			ROTATION		SCALE					TEXTURE_UV
+	ground		quad		bigTex		staticObj	0.0, 0.0, 1.1		0.0, 0.0, 0.0	0.49, 0.370833, 1.0		PauseMenu.tga
+	
+#Button: 3
+	ID			MODEL		TEXTURE		SHADER		POSITION			ROTATION		SCALE					TEXTURE_UV		VISIBLE
+	btResume	quad		bigTex		staticObj	-0.2, -0.05, 1.0	0.0, 0.0, 0.0	0.0875, 0.145833, 1.0	ResumeBT.tga		1
+	btRestart	quad		bigTex		staticObj	0.0, -0.05, 1.0		0.0, 0.0, 0.0	0.0875, 0.145833, 1.0	RestartLevelBT.tga	1
+	btBack2Main quad		bigTex		staticObj	0.2, -0.05, 1.0		0.0, 0.0, 0.0	0.0875, 0.145833, 1.0	MenuBT.tga 			1

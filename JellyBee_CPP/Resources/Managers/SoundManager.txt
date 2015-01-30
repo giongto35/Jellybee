@@ -1,0 +1,17 @@
+#SOUND: 15
+ID			PATH
+doreamon	Sounds/doreamon.mp3
+honey		Sounds/fireball.wav
+honey_fake	Sounds/kick.wav
+honey_black	Sounds/bump.wav
+moutain_dew	Sounds/stomp.wav
+heart		Sounds/1-up.wav
+end		Sounds/level_clear.wav
+teleport	Sounds/enter_level.wav
+pause		Sounds/pause.wav
+block		Sounds/break_brick_block.wav
+cool		Sounds/cool.wav
+score		Sounds/score.wav
+yowza		Sounds/yowza.wav
+yes			Sounds/yes.wav
+gameover	Sounds/lost_life.wav

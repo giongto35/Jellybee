@@ -1,0 +1,11 @@
+#Map: 0
+
+#Objects: 1
+#Object: 1
+	ID			MODEL		TEXTURE		SHADER		POSITION			ROTATION			SCALE			TEXTURE_UV
+	logo		static_quad		logo		logo		0.0, 0.0, 0.0		0.0, 0.0, 0.0		1.0, 1.0, 1.0	NULL
+#Button: 0
+	
+#Camera: 1
+	ID			FOV			NEAR		FAR			SPEED
+	sceneCam	45			0.1			500.0		1.0

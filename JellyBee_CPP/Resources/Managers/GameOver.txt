@@ -1,0 +1,9 @@
+#Object:
+	ID			MODEL		TEXTURE		SHADER		POSITION			ROTATION		SCALE					TEXTURE_UV
+	ground		quad		bigTex		staticObj	0.0, 0.0, 1.1		0.0, 0.0, 0.0	0.6, 0.754166, 1.0		GameOver.tga
+	
+#Button: 3
+	ID			MODEL		TEXTURE		SHADER			POSITION			ROTATION		SCALE					TEXTURE_UV		VISIBLE
+	btRestart	quad		bigTex		staticObj		-0.15, -0.7, 1.0	0.0, 0.0, 0.0	0.0875, 0.145833, 1.0	RestartLevelBT.tga	1
+	btBack2Main quad		bigTex		staticObj		0.15, -0.7, 1.0		0.0, 0.0, 0.0	0.0875, 0.145833, 1.0	MenuBT.tga 			1
+	btShare		quad		bigTex		staticObj		0.0, -0.4, 1.0		0.0, 0.0, 0.0	0.425, 0.145833, 1.0	ShareBT.tga			1

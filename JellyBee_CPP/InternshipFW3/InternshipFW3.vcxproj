@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1D7A661B-69FF-4C60-92D1-DDEE3347E969}</ProjectGuid>
+    <RootNamespace>InternshipFW2</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)BIN\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\Include;..\Lib\vld;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;USE_MEMDBG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libEGL.lib;libGLESv2.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\Lib;..\Lib\vld;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="CameraLookat.cpp" />
+    <ClCompile Include="EffectManager.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="Joypad.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Number.cpp" />
+    <ClCompile Include="ObjectManager.cpp" />
+    <ClCompile Include="ScreenResolution.cpp" />
+    <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="SoundManager.cpp" />
+    <ClCompile Include="InGame.cpp" />
+    <ClCompile Include="Logo.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="State.cpp" />
+    <ClCompile Include="Application.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="ResourcesManager.cpp" />
+    <ClCompile Include="ScenesManager.cpp" />
+    <ClCompile Include="StatesManager.cpp" />
+    <ClCompile Include="Bee.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="MainCharacter.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Framebuffer.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="NFG.cpp" />
+    <ClCompile Include="TGA.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Vector2.cpp" />
+    <ClCompile Include="Vector3.cpp" />
+    <ClCompile Include="Vector4.cpp" />
+    <ClCompile Include="Win32Surface.cpp" />
+    <ClCompile Include="Readme.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="CameraLookat.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="ColorDataConverter.h" />
+    <ClInclude Include="EffectManager.h" />
+    <ClInclude Include="Joypad.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Number.h" />
+    <ClInclude Include="ObjectsManager.h" />
+    <ClInclude Include="Platforms.h" />
+    <ClInclude Include="ScreenResolution.h" />
+    <ClInclude Include="Sound.h" />
+    <ClInclude Include="SoundManager.h" />
+    <ClInclude Include="InGame.h" />
+    <ClInclude Include="Logo.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="State.h" />
+    <ClInclude Include="Application.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="ResourcesManager.h" />
+    <ClInclude Include="ScenesManager.h" />
+    <ClInclude Include="StatesManager.h" />
+    <ClInclude Include="Bee.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="MainCharacter.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Framebuffer.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="NFG.h" />
+    <ClInclude Include="TGA.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Vector2.h" />
+    <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vector4.h" />
+    <ClInclude Include="ESContext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Shaders\3DObject.fs" />
+    <None Include="..\Resources\Shaders\3DObject.vs" />
+    <None Include="..\Resources\Shaders\Basic.fs" />
+    <None Include="..\Resources\Shaders\Basic.vs" />
+    <None Include="..\Resources\Shaders\BlurHorizontal.fs" />
+    <None Include="..\Resources\Shaders\BlurHorizontal.vs" />
+    <None Include="..\Resources\Shaders\BlurVertical.fs" />
+    <None Include="..\Resources\Shaders\BlurVertical.vs" />
+    <None Include="..\Resources\Shaders\Button.fs" />
+    <None Include="..\Resources\Shaders\Button.vs" />
+    <None Include="..\Resources\Shaders\Cube.fs" />
+    <None Include="..\Resources\Shaders\Cube.vs" />
+    <None Include="..\Resources\Shaders\EnvironmentReflection.fs" />
+    <None Include="..\Resources\Shaders\EnvironmentReflection.vs" />
+    <None Include="..\Resources\Shaders\EnvironmentRefraction.fs" />
+    <None Include="..\Resources\Shaders\EnvironmentRefraction.vs" />
+    <None Include="..\Resources\Shaders\FireShader.fs" />
+    <None Include="..\Resources\Shaders\FireShader.vs" />
+    <None Include="..\Resources\Shaders\LightCast.fs" />
+    <None Include="..\Resources\Shaders\LightCast.vs" />
+    <None Include="..\Resources\Shaders\MainCharacter.fs" />
+    <None Include="..\Resources\Shaders\MainCharacter.vs" />
+    <None Include="..\Resources\Shaders\PostBloom.fs" />
+    <None Include="..\Resources\Shaders\PostBloom.vs" />
+    <None Include="..\Resources\Shaders\PreBloom.fs" />
+    <None Include="..\Resources\Shaders\PreBloom.vs" />
+    <None Include="..\Resources\Shaders\Selection.fs" />
+    <None Include="..\Resources\Shaders\Selection.vs" />
+    <None Include="..\Resources\Shaders\Shadow.fs" />
+    <None Include="..\Resources\Shaders\Shadow.vs" />
+    <None Include="..\Resources\Shaders\Terrain.fs" />
+    <None Include="..\Resources\Shaders\Terrain.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Resources\Managers\EffectManager.txt" />
+    <Text Include="..\Resources\Managers\InGameState.txt" />
+    <Text Include="..\Resources\Managers\ItemInGame.txt" />
+    <Text Include="..\Resources\Managers\LogoState.txt" />
+    <Text Include="..\Resources\Managers\MainMenuButton.txt" />
+    <Text Include="..\Resources\Managers\MainMenuState.txt" />
+    <Text Include="..\Resources\Managers\ResourcesManager.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Leak.PNG" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

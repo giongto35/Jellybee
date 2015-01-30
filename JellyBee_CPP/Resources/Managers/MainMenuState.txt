@@ -1,0 +1,22 @@
+#Map: 0
+
+#Objects: 11
+#Object: 4
+	ID			MODEL		TEXTURE		SHADER		POSITION			ROTATION			SCALE				TEXTURE_UV
+	mainmenu	quad		bigTex		basic		0.0, 0.0, 0.0		0.0, 0.0, 0.0		1.0, 1.0, 1.0		Menu.tga
+	panelGround	quad		bigTex		basic		0.0, 0.0, 0.0		0.0, 0.0, 0.0		1.0, 1.0, 1.0		background.tga
+	helpPanel	quad		bigTex		basic		0.0, 0.0, 0.2		0.0, 0.0, 0.0		0.795, 0.8916, 1.0	howtoplay.tga
+	infoPanel	quad		bigTex		basic		0.0, 0.0, 0.2		0.0, 0.0, 0.0		0.56, 0.92083, 1.0	info.tga
+#Button: 7
+	ID			MODEL		TEXTURE		SHADER		POSITION			ROTATION			SCALE				TEXTURE_UV	VISIBLE
+	btnStart	quad		bigTex		basic		0.0, 0.0, 0.2		0.0, 0.0, 0.0		0.26375, 0.15, 1.0	Start.tga		1
+	SoundOn		quad		bigTex		basic		0.0, -0.35, 0.2		0.0, 0.0, 0.0		0.26375, 0.15, 1.0	SoundOn.tga		1
+	SoundOff	quad		bigTex		basic		0.0, -0.35, 0.2		0.0, 0.0, 0.0		0.26375, 0.15, 1.0	SoundOff.tga	0
+	btnQuit		quad		bigTex		basic		0.0, -0.7, 0.2		0.0, 0.0, 0.0		0.26375, 0.15, 1.0	Quit.tga		1
+	btHelp		quad		bigTex		basic		0.63, -0.8, 0.2		0.0, 0.0, 0.0		0.0875, 0.145833, 1.0	help.tga		1
+	btInfo		quad		bigTex		basic		0.85, -0.8, 0.2		0.0, 0.0, 0.0		0.0875, 0.145833, 1.0	infoBT.tga		1
+	btBack		quad		bigTex		basic		-0.85, -0.8, 0.4	0.0, 0.0, 0.0		0.0875, 0.145833, 1.0	back.tga		0
+
+#Camera: 1
+	ID			FOV			NEAR		FAR			SPEED
+	sceneCam	45			0.1			500.0		1.0

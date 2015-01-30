@@ -1,0 +1,4 @@
+#Levels: 2
+	ID				Path							MCSpeed
+	level1			Managers/InGameState.txt		1.0
+	level2			Managers/InGameState2.txt		1.5

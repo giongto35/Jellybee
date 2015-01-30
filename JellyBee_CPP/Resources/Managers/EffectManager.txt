@@ -1,0 +1,69 @@
+#NrEffect: 1
+
+ID: Bloom
+NrPass: 10
+First: 1c
+PassName: PreBloom
+	ShaderID: PreBloom
+	Textures: 1c 0 0
+	Target: 2c
+	OtherData: 0.7
+PassName: BlurHor
+	ShaderID: BlurHor
+	Textures: 2c 0 0
+	Target: 3c
+	OtherData: 1.0
+PassName: BlurVer
+	ShaderID: BlurVer
+	Textures: 3c 0 0
+	Target: 2c
+	OtherData: 1.0
+PassName: BlurHor
+	ShaderID: BlurHor
+	Textures: 2c 0 0
+	Target: 3c
+	OtherData: 2.0
+PassName: BlurVer
+	ShaderID: BlurVer
+	Textures: 3c 0 0
+	Target: 2c
+	OtherData: 2.0
+PassName: BlurHor
+	ShaderID: BlurHor
+	Textures: 2c 0 0
+	Target: 3c
+	OtherData: 4.0
+PassName: BlurVer
+	ShaderID: BlurVer
+	Textures: 3c 0 0
+	Target: 2c
+	OtherData: 4.0
+PassName: BlurHor
+	ShaderID: BlurHor
+	Textures: 2c 0 0
+	Target: 3c
+	OtherData: 8.0
+PassName: BlurVer
+	ShaderID: BlurVer
+	Textures: 3c 0 0
+	Target: 2c
+	OtherData: 8.0
+PassName:PostBloom
+	ShaderID: PostBloom
+	Textures: 1c 2c 0
+	Target: 0
+	OtherData: 1.0
+
+ID: Blur
+NrPass: 2
+First: 1c
+PassName: BlurHor
+	ShaderID: Shader10
+	Textures: 1c 0 0
+	Target: 2c
+	OtherData: 1.0
+PassName: BlurVer
+	ShaderID: Shader11
+	Textures: 2c 0 0
+	Target: 0
+	OtherData: 1.0

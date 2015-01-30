@@ -1,0 +1,75 @@
+#Model: 27
+	ID			PATH					REUSABLE
+#Model NFG: 8
+	skybox		Models/SkyBox.nfg		0
+	fire		Models/fire.nfg			0	
+	quad		Models/quad.nfg			1
+	circle		Models/round.nfg		0
+	bila		Models/Bila.nfg			1
+	static_quad	Models/quad.nfg			0
+	char		Models/quad.nfg			1
+	shit		Models/quad.nfg			1
+#Model OBJ: 19
+	Tree1		Models/Palm_Tree.obj	0
+	Tree2		Models/Banane.obj		0
+	heart		Models/Heart.obj		0
+	honey		Models/Honey.obj		0
+	honey_fake	Models/Honey_Fake.obj		0
+	honey_black	Models/Honey_Black.obj		0
+	Bee0		Models/Bee_000000.obj	0
+	Bee1		Models/Bee_000001.obj	0
+	Bee2		Models/Bee_000002.obj	0
+	Bee3		Models/Bee_000003.obj	0
+	Bee4		Models/Bee_000004.obj	0
+	Bee5		Models/Bee_000005.obj	0
+	Bee6		Models/Bee_000006.obj	0
+	Bee7		Models/Bee_000007.obj	0
+	Bee8		Models/Bee_000008.obj	0
+	Bee9		Models/Bee_000009.obj	0
+	moutain		Models/Mountain.obj		0
+	teleport	Models/Circle.obj		0
+	hive		Models/Hive.obj			0
+
+#Framebuffer: 4
+ShadowMap 1c 2c 3c
+
+#Texture: 14
+	ID			PATH						WRAP_MODE		TEXTURE_UV_PATH
+Texture2D: 13
+	grass		Textures/Grass.tga			REPEAT			NULL
+	logo		Textures/logo1.tga			REPEAT			NULL
+	bitmap		Textures/bitmapfont.tga		REPEAT			NULL
+	bigTex		Textures/bigtexture.tga		REPEAT			Textures/bigtexture.txt
+	mask		Textures/fire_mask.tga		REPEAT			NULL	
+	uvdMap		Textures/DisplacementMap.tga REPEAT			NULL		 	
+	Dirt		Textures/Dirt.tga			REPEAT			NULL		 	
+	blendMap	Textures/Terrain_blend_map.tga		REPEAT			NULL
+	rock		Textures/Rock.tga			REPEAT			NULL	
+	magnet		Textures/magnet.tga	REPEAT			NULL
+	velocity	Textures/speed.tga			REPEAT			NULL
+	clock		Textures/clock.tga			REPEAT			NULL
+	fog			Textures/fogVision.tga		REPEAT			NULL
+TextureCube: 1
+	envMap		Textures/envMap.tga			CLAMP			NULL
+
+#Shader: 14
+	ID			PATH_VS						PATH_FS						STATE
+	objShad		Shaders/3DObject.vs			Shaders/3DObject.fs			3: DEPTH BLEND CULL
+	cubeShad	Shaders/Cube.vs				Shaders/Cube.fs				1: DEPTH
+	basic		Shaders/Basic.vs			Shaders/Basic.fs			3: DEPTH BLEND CULL
+	staticObj	Shaders/Basic.vs			Shaders/Basic.fs			1: BLEND
+	sShad		Shaders/Selection.vs		Shaders/Selection.fs		1: DEPTH
+	mcShad		Shaders/MainCharacter.vs	Shaders/MainCharacter.fs	1: DEPTH
+	BlurVer		Shaders/BlurVertical.vs		Shaders/BlurVertical.fs		1: DEPTH
+	BlurHor		Shaders/BlurHorizontal.vs	Shaders/BlurHorizontal.fs	1: DEPTH
+	PreBloom	Shaders/PreBloom.vs			Shaders/PreBloom.fs			1: DEPTH
+	PostBloom	Shaders/PostBloom.vs		Shaders/PostBloom.fs		1: DEPTH
+	LightCast	Shaders/LightCast.vs		Shaders/LightCast.fs		1: DEPTH
+	logo		Shaders/Logo.vs				Shaders/Logo.fs				2: DEPTH BLEND
+	Char		Shaders/Char.vs				Shaders/Char.fs				1: BLEND
+	terrain		Shaders/Terrain.vs			Shaders/Terrain.fs			1: DEPTH
+	
+#Map: 2
+	ID          PATH
+	level1      Maps/Map1.tga
+	level2      Maps/Map1.tga
